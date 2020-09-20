@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exapanse Tracker</h1>
+    <div class="new-item">
+        <h3>New Expanse</h3>
+        
+        <label for="name-input">Expanse name: </label>
+        <input type="text" name="name-input" id="name-input" required>
+        
+        <label for="date-input">Date: </label>
+        <input type="date" name="date-input" id="date-input" required>
+        
+        <label for="amount-input">Amount: </label>
+        <input type="number" name="amount-input" id="amount-input" required>
+        
+        <select name="currency-option" id="currency">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="ils">ILS</option>
+        </select>
+        
+        <button type="button" onclick="addNewExpanse()">Add</button>
+
+    </div>
+    <table id="table">
+        <tbody>
+            <tr id="table-head">
+                <th id="num-col">Number</th>
+                <th id="exp-col">Expanse name</th>
+                <th id="date-col">Date</th>
+                <th id="amopunt-col">Amount</th>
+               <th id="table-head-erase"></th>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
